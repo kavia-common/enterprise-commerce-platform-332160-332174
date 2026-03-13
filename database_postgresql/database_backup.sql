@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict H3kmCzKMTffzlTJ9eDG4wMbEegJuqxlhVQ5N15zzDCTeIOVUtPfAB2Xrn7Fktwk
+\restrict jlhYmg1SYm0yPvr5Ivaho2G2xwAlmChMNvALdZ9HhLFB7PrxoqPgQahXUJ9DfIs
 
 -- Dumped from database version 16.11 (Ubuntu 16.11-0ubuntu0.24.04.1)
 -- Dumped by pg_dump version 16.11 (Ubuntu 16.11-0ubuntu0.24.04.1)
@@ -28,9 +28,9 @@ CREATE DATABASE myapp WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDE
 
 ALTER DATABASE myapp OWNER TO postgres;
 
-\unrestrict H3kmCzKMTffzlTJ9eDG4wMbEegJuqxlhVQ5N15zzDCTeIOVUtPfAB2Xrn7Fktwk
+\unrestrict jlhYmg1SYm0yPvr5Ivaho2G2xwAlmChMNvALdZ9HhLFB7PrxoqPgQahXUJ9DfIs
 \connect myapp
-\restrict H3kmCzKMTffzlTJ9eDG4wMbEegJuqxlhVQ5N15zzDCTeIOVUtPfAB2Xrn7Fktwk
+\restrict jlhYmg1SYm0yPvr5Ivaho2G2xwAlmChMNvALdZ9HhLFB7PrxoqPgQahXUJ9DfIs
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -198,8 +198,9 @@ b85445f0-76f9-4665-95d7-a997e9a14f7f	USB-C Laptop Docking Station	Universal dock
 --
 
 COPY public.users (id, email, password_hash, first_name, last_name, role, is_active, created_at, updated_at) FROM stdin;
-1af1ab54-1c73-4219-b832-dd6695e8fe10	admin@enterprise.com	$2b$10$XURQ4rNBq1Wv0dQMkLxHweHGEqHZ1qaGFnCSBqCaGjfCJbMnKYEti	Admin	User	admin	t	2026-03-13 13:34:48.976207+00	2026-03-13 13:34:48.976207+00
-5969e127-5483-403b-a459-828341173ed7	customer@example.com	$2b$10$XURQ4rNBq1Wv0dQMkLxHweHGEqHZ1qaGFnCSBqCaGjfCJbMnKYEti	Jane	Doe	customer	t	2026-03-13 13:34:53.348831+00	2026-03-13 13:34:53.348831+00
+1af1ab54-1c73-4219-b832-dd6695e8fe10	admin@enterprise.com	$2a$12$pXwNAkABC927b2FY/UXjJO3IKHZV5aadlOqYb96Mg0WeDxjHWFq/O	Admin	User	admin	t	2026-03-13 13:34:48.976207+00	2026-03-13 14:01:14.555365+00
+5969e127-5483-403b-a459-828341173ed7	customer@example.com	$2a$12$pXwNAkABC927b2FY/UXjJO3IKHZV5aadlOqYb96Mg0WeDxjHWFq/O	Jane	Doe	customer	t	2026-03-13 13:34:53.348831+00	2026-03-13 14:01:14.593911+00
+3f389b98-f6f0-4321-96c6-0fe327ebeb20	test@integration.com	$2a$12$dMr6Bmd5v0UAY.a.phQoQOa3mSD4fJOTtAnrQWFQiBXialKamTk1e	Test	User	customer	t	2026-03-13 14:04:09.857376+00	2026-03-13 14:04:09.857376+00
 \.
 
 
@@ -524,5 +525,5 @@ ALTER DEFAULT PRIVILEGES FOR ROLE postgres IN SCHEMA public GRANT ALL ON TABLES 
 -- PostgreSQL database dump complete
 --
 
-\unrestrict H3kmCzKMTffzlTJ9eDG4wMbEegJuqxlhVQ5N15zzDCTeIOVUtPfAB2Xrn7Fktwk
+\unrestrict jlhYmg1SYm0yPvr5Ivaho2G2xwAlmChMNvALdZ9HhLFB7PrxoqPgQahXUJ9DfIs
 
